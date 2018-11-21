@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lit_verification_code"
+        android:textColor="@color/black87Opacity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/lit_verification_code_desc"
+        android:textColor="@color/black54Opacity" />
+
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorButtonTeal"
+        android:letterSpacing="0.2"
+        android:paddingBottom="6dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="6dp"
+        android:text="OK"
+        android:textColor="@color/white90Opacity"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:padding="4dp"
+        android:text="Resend code"
+        android:textColor="@color/colorButtonTeal" />
+</LinearLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/blue900"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="You transfer"
+                    android:textColor="@color/white100Opacity"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="Rp 20.000"
+                    android:textColor="@color/white100Opacity"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvFullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="to Bryan Joko"
+                    android:textColor="@color/white100Opacity"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:shadowColor="#7F000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="12 Aug 2017"
+                        android:textColor="@color/white100Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:shadowColor="#7F000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="13:00:01"
+                        android:textColor="@color/white85Opacity"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white100Opacity"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tvMethod2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="14dp"
+                android:text="MONEY TRANSFER"
+                android:textColor="@color/black87Opacity"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black12Opacity" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="12dp">
+
+
+                    <TextView
+                        android:id="@+id/tvToOrFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To:"
+                        android:textColor="@color/black87Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvFullname2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvToOrFrom"
+                        android:layout_marginTop="12dp"
+                        android:text="Bryan Joklo"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvAmount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvToOrFrom"
+                        android:layout_marginTop="12dp"
+                        android:text="Rp 20.000"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black12Opacity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="12dp">
+
+
+                    <TextView
+                        android:id="@+id/tvContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact:"
+                        android:textColor="@color/black87Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvEmailContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvContact"
+                        android:layout_marginTop="12dp"
+                        android:text="bryan@gmail.com"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvEmailIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvContact"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/fa_envelope_o"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black12Opacity" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layWithdraw"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="12dp">
+
+
+                    <TextView
+                        android:id="@+id/tvLabelAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AMOUNT"
+                        android:textColor="@color/black87Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvWithdrawAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rp 20.000"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvLabelFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLabelAmount"
+                        android:layout_marginTop="12dp"
+                        android:text="FEE"
+
+                        android:textColor="@color/black87Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvWithdrawFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvLabelAmount"
+                        android:layout_marginTop="12dp"
+                        android:text="Rp 10.000"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvLabelTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLabelFee"
+                        android:layout_marginTop="12dp"
+                        android:text="TOTAL"
+                        android:textColor="@color/black87Opacity"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvAmountTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvLabelFee"
+                        android:layout_marginTop="12dp"
+                        android:text="Rp 10.000"
+                        android:textColor="@color/black54Opacity"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black12Opacity" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:text="TRANSACTION ID"
+                    android:textColor="@color/black87Opacity"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTransactionID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="sad8978as7dasfsa8"
+                    android:textColor="@color/black54Opacity"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

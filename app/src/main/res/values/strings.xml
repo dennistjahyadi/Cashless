@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Cashless</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+
+    <string name="fa_envelope_o">&#xf003;</string>
+    <string name="fa_angle_right">&#xf105;</string>
+    <string name="fa_refresh"></string>
+    <string name="fa_check">&#xf00c;</string>
+    <string name="fa_trash_o">&#xf014;</string>
+
+    <string name="lit_please_fill_all_form">Tolong lengkapi semua form!</string>
+    <string name="lit_email_not_valid">Email tidak valid!</string>
+    <string name="lit_type_the_password_correctly">Ketik ulang password dengan benar!</string>
+    <string name="lit_register_success">Register berhasil!</string>
+    <string name="lit_email_has_been_used">Email sudah digunakan.</string>
+    <string name="lit_wrong_email_or_password">Email/Password salah</string>
+    <string name="lit_verification_email">Verifikasi Email</string>
+    <string name="lit_wrong_verification_code">Kode Verifikasi Salah</string>
+    <string name="lit_create_laundry">Buat usaha Laundry</string>
+    <string name="lit_click_to_create_laundry">Klik untuk membuat usaha</string>
+    <string name="lit_transaction">Transaksi</string>
+    <string name="lit_my_account">Akun Saya</string>
+    <string name="lit_verification_code">Verification Code</string>
+    <string name="lit_verification_code_desc">Get your verification code from your registered email</string>
+    <string name="fa_plus"></string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white100Opacity"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/tvBankAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="a"
+        android:textColor="@color/black87Opacity"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvBankAccountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:text="a"
+        android:textColor="@color/black70Opacity"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvBankAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:text="a"
+        android:textColor="@color/black70Opacity"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black12Opacity" />
+</LinearLayout>
